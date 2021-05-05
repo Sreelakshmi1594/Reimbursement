@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://Java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+  
+  <servlet>
+  		<servlet-name>MasterServlet</servlet-name>
+  		<servlet-class>com.revature.servlets.MasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MasterServlet</servlet-name>
+  	<url-pattern>/MasterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ActionServlet</servlet-name>
+  	<servlet-class>com.revature.servlets.ActionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ActionServlet</servlet-name>
+  	<url-pattern>/html/ActionServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>LogoutServlet</servlet-name>
+  		<servlet-class>com.revature.servlets.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>LogoutServlet</servlet-name>
+  		<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>JsonMasterServlet</servlet-name>
+  		<servlet-class>com.revature.servlets.JsonMasterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>JsonMasterServlet</servlet-name>
+  		<url-pattern>*.json</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+</web-app>

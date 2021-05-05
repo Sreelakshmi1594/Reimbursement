@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>UserLogin</title>
+<style type="text/css">
+body {
+    margin: 0;
+    padding: auto;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #b92b27, #1565c0);  
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  color:white;
+}
+</style>
+</head>
+<body>
+<h3><a class ="topright" href="/Reimbursement/LogoutServlet">Logout</a> </h3>
+<table>
+  <tr>
+    <td>View your past tickets:</td>
+    <td><form action="/Reimbursement/html/ActionServlet" method="get">
+		<input type="submit" value="Click Here"> 
+		</form></td>
+  </tr>
+  <tr>
+    <td>Apply for new Reimbursement</td>
+    <td><form action="/Reimbursement/Html/ReimbSubForm.html">
+		<input type="submit" value="Click Here"> 
+		</form></td>
+  </tr>
+</table>
+</body>
+</html>

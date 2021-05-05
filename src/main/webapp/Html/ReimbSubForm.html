@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Submit</title>
+<style type="text/css">
+body {
+    margin: 0;
+    padding: auto;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #b92b27, #1565c0);  
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+  color:white;
+}
+</style>
+</head>
+<body>
+<a class="topright" href="/Reimbursement/LogoutServlet">Logout</a>|
+	<form  action="/Reimbursement/html/ActionServlet" method="post" enctype="multipart/form-data">
+	<table>
+     <tr><td>
+      <label>Enter the Amount:</label></td>
+      <td><input type="text" name="amount" size="50" /></td></tr>
+
+    <tr><td>
+      <label>Description:</label> </td>
+      <td><textarea name="description" rows="10" cols="30">Write here</textarea></td></tr>
+     
+    <tr><td>
+      <label>Upload your Receipt here: </label> </td>
+     <td> <input  type="file" name="photo" id="imagesize" /></td></tr>
+     
+     
+     <tr><td></td>
+      <td><select name="type" id="type">
+  		<option value="1">Lodging</option>
+  		<option value="2">Travel</option>
+  		<option value="3">Food</option>
+  		<option value="4">Other</option>
+	 </select>
+     </td></tr>
+     
+     <tr><td></td>
+     <td><input type="submit" value="Submit"></td></tr>
+     </table>
+    </form> 
+</body>
+</html>
